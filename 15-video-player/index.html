@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamPlay - Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-player-container">
+        <!-- Video Player -->
+        <div class="video-player" id="videoPlayer">
+            <div class="video-wrapper">
+                <!-- Placeholder for video (using image since we can't embed actual video) -->
+                <div class="video-placeholder" id="videoPlaceholder">
+                    <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Video Thumbnail" class="video-thumbnail">
+                    <div class="play-overlay" id="playOverlay">
+                        <button class="play-button-large" id="playButtonLarge">
+                            <span class="play-icon">▶</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Video Controls -->
+                <div class="video-controls" id="videoControls">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar">
+                            <div class="progress-buffer" id="progressBuffer"></div>
+                            <div class="progress-played" id="progressPlayed"></div>
+                            <div class="progress-handle" id="progressHandle"></div>
+                        </div>
+                        <div class="time-tooltip" id="timeTooltip">0:00</div>
+                    </div>
+                    
+                    <div class="controls-bottom">
+                        <div class="controls-left">
+                            <button class="control-btn play-pause" id="playPauseBtn" title="Play/Pause">
+                                <span class="play-icon">▶</span>
+                                <span class="pause-icon" style="display: none;">⏸</span>
+                            </button>
+                            
+                            <button class="control-btn skip-back" id="skipBackBtn" title="Skip back 10s">
+                                <span class="skip-icon">⏪</span>
+                                <span class="skip-text">10</span>
+                            </button>
+                            
+                            <button class="control-btn skip-forward" id="skipForwardBtn" title="Skip forward 10s">
+                                <span class="skip-icon">⏩</span>
+                                <span class="skip-text">10</span>
+                            </button>
+                            
+                            <div class="volume-container">
+                                <button class="control-btn volume-btn" id="volumeBtn" title="Mute/Unmute">
+                                    <span class="volume-icon">🔊</span>
+                                </button>
+                                <div class="volume-slider" id="volumeSlider">
+                                    <div class="volume-bar">
+                                        <div class="volume-fill" id="volumeFill"></div>
+                                        <div class="volume-handle" id="volumeHandle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="time-display">
+                                <span class="current-time" id="currentTime">0:00</span>
+                                <span class="time-separator">/</span>
+                                <span class="total-time" id="totalTime">10:24</span>
+                            </div>
+                        </div>
+                        
+                        <div class="controls-right">
+                            <button class="control-btn captions-btn" id="captionsBtn" title="Captions">
+                                <span class="captions-icon">CC</span>
+                            </button>
+                            
+                            <button class="control-btn settings-btn" id="settingsBtn" title="Settings">
+                                <span class="settings-icon">⚙</span>
+                            </button>
+                            
+                            <button class="control-btn pip-btn" id="pipBtn" title="Picture in Picture">
+                                <span class="pip-icon">⧉</span>
+                            </button>
+                            
+                            <button class="control-btn fullscreen-btn" id="fullscreenBtn" title="Fullscreen">
+                                <span class="fullscreen-icon">⛶</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Loading Spinner -->
+                <div class="loading-spinner" id="loadingSpinner">
+                    <div class="spinner"></div>
+                </div>
+                
+                <!-- Settings Menu -->
+                <div class="settings-menu" id="settingsMenu">
+                    <div class="settings-section">
+                        <h3 class="settings-title">Playback Speed</h3>
+                        <div class="settings-options">
+                            <button class="settings-option" data-speed="0.5">0.5x</button>
+                            <button class="settings-option" data-speed="0.75">0.75x</button>
+                            <button class="settings-option active" data-speed="1">Normal</button>
+                            <button class="settings-option" data-speed="1.25">1.25x</button>
+                            <button class="settings-option" data-speed="1.5">1.5x</button>
+                            <button class="settings-option" data-speed="2">2x</button>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-section">
+                        <h3 class="settings-title">Quality</h3>
+                        <div class="settings-options">
+                            <button class="settings-option" data-quality="240p">240p</button>
+                            <button class="settings-option" data-quality="360p">360p</button>
+                            <button class="settings-option" data-quality="480p">480p</button>
+                            <button class="settings-option active" data-quality="720p">720p HD</button>
+                            <button class="settings-option" data-quality="1080p">1080p HD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video Info -->
+        <div class="video-info">
+            <div class="video-header">
+                <h1 class="video-title">Amazing Nature Documentary: Wildlife in 4K</h1>
+                <div class="video-stats">
+                    <span class="view-count">1.2M views</span>
+                    <span class="upload-date">2 days ago</span>
+                </div>
+            </div>
+            
+            <div class="video-actions">
+                <button class="action-btn like-btn" id="likeBtn">
+                    <span class="action-icon">👍</span>
+                    <span class="action-text">Like</span>
+                    <span class="action-count">12K</span>
+                </button>
+                
+                <button class="action-btn dislike-btn" id="dislikeBtn">
+                    <span class="action-icon">👎</span>
+                    <span class="action-text">Dislike</span>
+                </button>
+                
+                <button class="action-btn share-btn" id="shareBtn">
+                    <span class="action-icon">↗</span>
+                    <span class="action-text">Share</span>
+                </button>
+                
+                <button class="action-btn save-btn" id="saveBtn">
+                    <span class="action-icon">📁</span>
+                    <span class="action-text">Save</span>
+                </button>
+                
+                <button class="action-btn more-btn" id="moreBtn">
+                    <span class="action-icon">⋯</span>
+                </button>
+            </div>
+            
+            <div class="channel-info">
+                <div class="channel-avatar">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Channel Avatar">
+                </div>
+                <div class="channel-details">
+                    <h3 class="channel-name">Nature Explorer</h3>
+                    <p class="subscriber-count">2.5M subscribers</p>
+                </div>
+                <button class="subscribe-btn" id="subscribeBtn">Subscribe</button>
+            </div>
+            
+            <div class="video-description">
+                <p class="description-text">
+                    Experience the breathtaking beauty of wildlife in stunning 4K resolution. This documentary takes you on a journey through diverse ecosystems, showcasing the incredible diversity of life on our planet.
+                </p>
+                <button class="show-more-btn" id="showMoreBtn">Show more</button>
+            </div>
+        </div>
+        
+        <!-- Playlist -->
+        <div class="playlist-section">
+            <div class="playlist-header">
+                <h3 class="playlist-title">Up Next</h3>
+                <button class="autoplay-toggle" id="autoplayToggle">
+                    <span class="toggle-text">Autoplay</span>
+                    <div class="toggle-switch">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </button>
+            </div>
+            
+            <div class="playlist-videos">
+                <div class="playlist-video active">
+                    <div class="playlist-thumbnail">
+                        <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Video Thumbnail">
+                        <span class="video-duration">10:24</span>
+                    </div>
+                    <div class="playlist-info">
+                        <h4 class="playlist-video-title">Amazing Nature Documentary: Wildlife in 4K</h4>
+                        <p class="playlist-channel">Nature Explorer</p>
+                        <p class="playlist-views">1.2M views • 2 days ago</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-video">
+                    <div class="playlist-thumbnail">
+                        <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Video Thumbnail">
+                        <span class="video-duration">8:15</span>
+                    </div>
+                    <div class="playlist-info">
+                        <h4 class="playlist-video-title">Forest Mysteries: Hidden Wonders</h4>
+                        <p class="playlist-channel">Nature Explorer</p>
+                        <p class="playlist-views">890K views • 5 days ago</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-video">
+                    <div class="playlist-thumbnail">
+                        <img src="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Video Thumbnail">
+                        <span class="video-duration">12:30</span>
+                    </div>
+                    <div class="playlist-info">
+                        <h4 class="playlist-video-title">Ocean Depths: Marine Life Exploration</h4>
+                        <p class="playlist-channel">Nature Explorer</p>
+                        <p class="playlist-views">2.1M views • 1 week ago</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-video">
+                    <div class="playlist-thumbnail">
+                        <img src="https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Video Thumbnail">
+                        <span class="video-duration">15:45</span>
+                    </div>
+                    <div class="playlist-info">
+                        <h4 class="playlist-video-title">Mountain Peaks: Alpine Adventures</h4>
+                        <p class="playlist-channel">Nature Explorer</p>
+                        <p class="playlist-views">1.5M views • 2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

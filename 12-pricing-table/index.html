@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans - CloudSync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pricing-container">
+        <header class="pricing-header">
+            <h1 class="main-title">Choose Your Plan</h1>
+            <p class="main-subtitle">Select the perfect plan for your needs. Upgrade or downgrade at any time.</p>
+            
+            <!-- Billing Toggle -->
+            <div class="billing-toggle">
+                <span class="billing-label">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="billing-label">
+                    Yearly 
+                    <span class="discount-badge">Save 20%</span>
+                </span>
+            </div>
+        </header>
+
+        <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <div class="pricing-card basic">
+                <div class="card-header">
+                    <div class="plan-icon">📦</div>
+                    <h3 class="plan-name">Basic</h3>
+                    <p class="plan-description">Perfect for individuals and small projects</p>
+                </div>
+                
+                <div class="card-pricing">
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="price-amount" data-monthly="9" data-yearly="7">9</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <div class="yearly-savings hidden">Save $24/year</div>
+                </div>
+
+                <div class="card-features">
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">5GB Storage</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Up to 3 Projects</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Basic Support</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Mobile App Access</span>
+                        </li>
+                        <li class="feature-item disabled">
+                            <span class="feature-icon">✗</span>
+                            <span class="feature-text">Advanced Analytics</span>
+                        </li>
+                        <li class="feature-item disabled">
+                            <span class="feature-icon">✗</span>
+                            <span class="feature-text">Priority Support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-action">
+                    <button class="plan-btn basic-btn">Get Started</button>
+                    <p class="trial-text">14-day free trial</p>
+                </div>
+            </div>
+
+            <!-- Pro Plan (Popular) -->
+            <div class="pricing-card pro popular">
+                <div class="popular-badge">Most Popular</div>
+                <div class="card-header">
+                    <div class="plan-icon">🚀</div>
+                    <h3 class="plan-name">Pro</h3>
+                    <p class="plan-description">Best for growing teams and businesses</p>
+                </div>
+                
+                <div class="card-pricing">
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="price-amount" data-monthly="29" data-yearly="23">29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <div class="yearly-savings hidden">Save $72/year</div>
+                </div>
+
+                <div class="card-features">
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">100GB Storage</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Unlimited Projects</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Priority Support</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Advanced Analytics</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Team Collaboration</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">API Access</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-action">
+                    <button class="plan-btn pro-btn">Start Pro Trial</button>
+                    <p class="trial-text">14-day free trial</p>
+                </div>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card enterprise">
+                <div class="card-header">
+                    <div class="plan-icon">🏢</div>
+                    <h3 class="plan-name">Enterprise</h3>
+                    <p class="plan-description">For large organizations with custom needs</p>
+                </div>
+                
+                <div class="card-pricing">
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="price-amount" data-monthly="99" data-yearly="79">99</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <div class="yearly-savings hidden">Save $240/year</div>
+                </div>
+
+                <div class="card-features">
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Unlimited Storage</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Unlimited Projects</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">24/7 Dedicated Support</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Custom Integrations</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Advanced Security</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">SLA Guarantee</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-action">
+                    <button class="plan-btn enterprise-btn">Contact Sales</button>
+                    <p class="trial-text">Custom demo available</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I change my plan anytime?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately and we'll prorate any billing differences.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a free trial?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All plans come with a 14-day free trial. No credit card required to start your trial.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, PayPal, and bank transfers for Enterprise customers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I cancel anytime?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel your subscription at any time. You'll continue to have access until the end of your billing period.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-content">
+                <h3 class="trust-title">Trusted by 10,000+ companies worldwide</h3>
+                <div class="trust-features">
+                    <div class="trust-item">
+                        <span class="trust-icon">🔒</span>
+                        <span class="trust-text">Bank-level Security</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">⚡</span>
+                        <span class="trust-text">99.9% Uptime</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">🌍</span>
+                        <span class="trust-text">Global CDN</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">📞</span>
+                        <span class="trust-text">24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

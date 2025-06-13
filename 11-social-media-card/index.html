@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="social-container">
+        <div class="social-card">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="cover-photo">
+                    <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cover Photo">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Profile Picture" id="profileImg">
+                        <div class="online-status"></div>
+                    </div>
+                    <div class="profile-details">
+                        <h2 class="profile-name">Alex Johnson</h2>
+                        <p class="profile-username">@alexjohnson</p>
+                        <p class="profile-bio">Frontend Developer | UI/UX Designer | Coffee Enthusiast ☕</p>
+                        <div class="profile-location">
+                            <span class="location-icon">📍</span>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-number">1.2K</span>
+                    <span class="stat-label">Posts</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15.8K</span>
+                    <span class="stat-label">Followers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">892</span>
+                    <span class="stat-label">Following</span>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-primary follow-btn" id="followBtn">
+                    <span class="btn-text">Follow</span>
+                    <span class="btn-icon">+</span>
+                </button>
+                <button class="btn btn-secondary message-btn">
+                    <span class="btn-icon">💬</span>
+                    <span class="btn-text">Message</span>
+                </button>
+                <button class="btn btn-secondary more-btn">
+                    <span class="btn-icon">⋯</span>
+                </button>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="posts-section">
+                <h3 class="section-title">Recent Posts</h3>
+                <div class="post-item">
+                    <div class="post-header">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Profile" class="post-avatar">
+                        <div class="post-info">
+                            <span class="post-author">Alex Johnson</span>
+                            <span class="post-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Just finished working on a new design system! Excited to share it with the community. 🎨✨</p>
+                        <div class="post-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Post Image">
+                        </div>
+                    </div>
+                    <div class="post-actions">
+                        <button class="post-action like-action">
+                            <span class="action-icon">♡</span>
+                            <span class="action-count">24</span>
+                        </button>
+                        <button class="post-action comment-action">
+                            <span class="action-icon">💬</span>
+                            <span class="action-count">8</span>
+                        </button>
+                        <button class="post-action share-action">
+                            <span class="action-icon">↗</span>
+                            <span class="action-count">3</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="post-header">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Profile" class="post-avatar">
+                        <div class="post-info">
+                            <span class="post-author">Alex Johnson</span>
+                            <span class="post-time">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Beautiful sunset from my office window today. Sometimes the best inspiration comes from nature! 🌅</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="post-action like-action">
+                            <span class="action-icon">♡</span>
+                            <span class="action-count">156</span>
+                        </button>
+                        <button class="post-action comment-action">
+                            <span class="action-icon">💬</span>
+                            <span class="action-count">23</span>
+                        </button>
+                        <button class="post-action share-action">
+                            <span class="action-icon">↗</span>
+                            <span class="action-count">12</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mutual Friends -->
+            <div class="friends-section">
+                <h3 class="section-title">Mutual Friends</h3>
+                <div class="friends-list">
+                    <div class="friend-item">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Friend" class="friend-avatar">
+                        <span class="friend-name">Sarah</span>
+                    </div>
+                    <div class="friend-item">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Friend" class="friend-avatar">
+                        <span class="friend-name">Mike</span>
+                    </div>
+                    <div class="friend-item">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Friend" class="friend-avatar">
+                        <span class="friend-name">Emma</span>
+                    </div>
+                    <div class="friend-item">
+                        <span class="more-friends">+12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

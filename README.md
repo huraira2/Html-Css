@@ -1,6 +1,6 @@
 # HTML/CSS Projects Collection
 
-This repository contains 10 diverse HTML/CSS projects showcasing different web development techniques and design patterns.
+This repository contains 15 diverse HTML/CSS projects showcasing different web development techniques and design patterns.
 
 ## Projects Overview
 
@@ -64,6 +64,36 @@ An engaging coming soon page with countdown timer styling and email signup.
 - **Technologies**: HTML5, CSS3, CSS animations
 - **Location**: `/10-coming-soon/`
 
+### 11. Social Media Card
+An interactive social media profile card with user stats and post previews.
+- **Features**: Profile interactions, hover effects, social features
+- **Technologies**: HTML5, CSS3, JavaScript
+- **Location**: `/11-social-media-card/`
+
+### 12. Pricing Table
+A modern pricing table with plan comparisons and interactive elements.
+- **Features**: Plan switching, billing toggles, feature comparisons
+- **Technologies**: HTML5, CSS3, JavaScript
+- **Location**: `/12-pricing-table/`
+
+### 13. Image Gallery
+A responsive image gallery with lightbox, filtering, and multiple view modes.
+- **Features**: Lightbox modal, category filtering, grid/masonry/list views
+- **Technologies**: HTML5, CSS3, JavaScript
+- **Location**: `/13-image-gallery/`
+
+### 14. Contact Form
+A comprehensive contact form with validation, animations, and FAQ section.
+- **Features**: Form validation, character counting, FAQ accordion
+- **Technologies**: HTML5, CSS3, JavaScript
+- **Location**: `/14-contact-form/`
+
+### 15. Video Player
+A custom video player interface with full controls and playlist functionality.
+- **Features**: Custom controls, settings menu, playlist, keyboard shortcuts
+- **Technologies**: HTML5, CSS3, JavaScript
+- **Location**: `/15-video-player/`
+
 ## Getting Started
 
 Each project is self-contained in its own directory. To view any project:
@@ -79,6 +109,8 @@ Each project is self-contained in its own directory. To view any project:
 - **Animations**: Smooth transitions and engaging animations
 - **Clean Code**: Well-structured and commented code
 - **Cross-browser Compatibility**: Works across modern browsers
+- **Interactive Elements**: JavaScript-powered interactions
+- **Accessibility**: Semantic HTML and keyboard navigation support
 
 ## Learning Objectives
 
@@ -89,6 +121,54 @@ These projects demonstrate:
 - CSS animations and transitions
 - Modern layout techniques (Flexbox, Grid)
 - UI/UX design patterns
+- JavaScript DOM manipulation
+- Form validation and user interactions
+- Component-based design thinking
+
+## Project Categories
+
+### **UI Components**
+- Product Card (#2)
+- Social Media Card (#11)
+- Pricing Table (#12)
+- Contact Form (#14)
+
+### **Application Interfaces**
+- Task Manager (#5)
+- Music Player (#6)
+- Dashboard (#9)
+- Image Gallery (#13)
+- Video Player (#15)
+
+### **Landing Pages**
+- Portfolio Website (#1)
+- Restaurant Landing (#4)
+- Blog Layout (#7)
+- Coming Soon Page (#10)
+
+### **Interactive Forms**
+- Auth Forms (#8)
+- Contact Form (#14)
+
+### **Data Visualization**
+- Weather Dashboard (#3)
+- Analytics Dashboard (#9)
+
+## Technologies Used
+
+- **HTML5**: Semantic markup, accessibility features
+- **CSS3**: Flexbox, Grid, animations, custom properties
+- **JavaScript**: DOM manipulation, event handling, local storage
+- **Responsive Design**: Mobile-first approach, media queries
+- **Modern Web APIs**: Intersection Observer, Clipboard API, Web Share API
+
+## Browser Support
+
+All projects are tested and work in:
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
 
 ## License
 
@@ -97,3 +177,7 @@ MIT License - see LICENSE file for details.
 ## Author
 
 Huraira Amjad Jadoon
+
+---
+
+*Each project includes detailed comments and follows modern web development best practices. Perfect for learning, reference, or as starting points for your own projects.*

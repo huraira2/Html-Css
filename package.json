@@ -1,10 +1,10 @@
 {
   "name": "html-css-projects-collection",
   "version": "1.0.0",
-  "description": "A collection of 10 HTML/CSS projects showcasing different web development techniques",
+  "description": "A collection of 15 HTML/CSS projects showcasing different web development techniques",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'HTML/CSS projects ready! Open any project folder and view the index.html file in your browser.' && echo 'Available projects:' && echo '1. 01-portfolio-website' && echo '2. 02-product-card' && echo '3. 03-weather-dashboard' && echo '4. 04-restaurant-landing' && echo '5. 05-task-manager' && echo '6. 06-music-player' && echo '7. 07-blog-layout' && echo '8. 08-auth-forms' && echo '9. 09-dashboard' && echo '10. 10-coming-soon'",
+    "dev": "echo 'HTML/CSS projects ready! Open any project folder and view the index.html file in your browser.' && echo 'Available projects:' && echo '1. 01-portfolio-website' && echo '2. 02-product-card' && echo '3. 03-weather-dashboard' && echo '4. 04-restaurant-landing' && echo '5. 05-task-manager' && echo '6. 06-music-player' && echo '7. 07-blog-layout' && echo '8. 08-auth-forms' && echo '9. 09-dashboard' && echo '10. 10-coming-soon' && echo '11. 11-social-media-card' && echo '12. 12-pricing-table' && echo '13. 13-image-gallery' && echo '14. 14-contact-form' && echo '15. 15-video-player'",
     "start": "npm run dev"
   },
   "keywords": [

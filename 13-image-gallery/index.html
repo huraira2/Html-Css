@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoVault - Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <!-- Header -->
+        <header class="gallery-header">
+            <div class="header-content">
+                <h1 class="gallery-title">PhotoVault</h1>
+                <p class="gallery-subtitle">Discover amazing photography from around the world</p>
+            </div>
+            
+            <!-- Search and Filters -->
+            <div class="gallery-controls">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search photos..." id="searchInput">
+                    <button class="search-btn" id="searchBtn">🔍</button>
+                </div>
+                
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                    <button class="filter-btn" data-filter="city">City</button>
+                    <button class="filter-btn" data-filter="people">People</button>
+                    <button class="filter-btn" data-filter="abstract">Abstract</button>
+                </div>
+                
+                <div class="view-controls">
+                    <button class="view-btn active" data-view="grid" title="Grid View">⊞</button>
+                    <button class="view-btn" data-view="masonry" title="Masonry View">⊟</button>
+                    <button class="view-btn" data-view="list" title="List View">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Gallery Grid -->
+        <main class="gallery-main">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Nature Photos -->
+                <div class="gallery-item" data-category="nature" data-tags="forest trees green">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Forest Landscape" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="image-actions">
+                                <button class="action-btn like-btn" title="Like">♡</button>
+                                <button class="action-btn download-btn" title="Download">⬇</button>
+                                <button class="action-btn share-btn" title="Share">↗</button>
+                                <button class="action-btn fullscreen-btn" title="View Full">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">Misty Forest</h3>
+                        <p class="image-description">A serene forest landscape shrouded in morning mist</p>
+                        <div class="image-meta">
+                            <span class="photographer">📷 John Nature</span>
+                            <span class="image-stats">
+                                <span class="likes">♡ 234</span>
+                                <span class="views">👁 1.2k</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="city" data-tags="urban skyline night">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=600" alt="City Skyline" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="image-actions">
+                                <button class="action-btn like-btn" title="Like">♡</button>
+                                <button class="action-btn download-btn" title="Download">⬇</button>
+                                <button class="action-btn share-btn" title="Share">↗</button>
+                                <button class="action-btn fullscreen-btn" title="View Full">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">City Lights</h3>
+                        <p class="image-description">Urban skyline illuminated against the night sky</p>
+                        <div class="image-meta">
+                            <span class="photographer">📷 Urban Explorer</span>
+                            <span class="image-stats">
+                                <span class="likes">♡ 456</span>
+                                <span class="views">👁 2.1k</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="people" data-tags="portrait woman smile">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Portrait" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="image-actions">
+                                <button class="action-btn like-btn" title="Like">♡</button>
+                                <button class="action-btn download-btn" title="Download">⬇</button>
+                                <button class="action-btn share-btn" title="Share">↗</button>
+                                <button class="action-btn fullscreen-btn" title="View Full">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">Natural Portrait</h3>
+                        <p class="image-description">A candid portrait capturing genuine emotion</p>
+                        <div class="image-meta">
+                            <span class="photographer">📷 Portrait Pro</span>
+                            <span class="image-stats">
+                                <span class="likes">♡ 789</span>
+                                <span class="views">👁 3.4k</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="abstract" data-tags="colors geometric pattern">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Abstract Art" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="image-actions">
+                                <button class="action-btn like-btn" title="Like">♡</button>
+                                <button class="action-btn download-btn" title="Download">⬇</button>
+                                <button class="action-btn share-btn" title="Share">↗</button>
+                                <button class="action-btn fullscreen-btn" title="View Full">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">Color Burst</h3>
+                        <p class="image-description">An explosion of vibrant colors and patterns</p>
+                        <div class="image-meta">
+                            <span class="photographer">📷 Abstract Artist</span>
+                            <span class="image-stats">
+                                <span class="likes">♡ 321</span>
+                                <span class="views">👁 1.8k</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature" data-tags="ocean waves blue">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ocean Waves" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="image-actions">
+                                <button class="action-btn like-btn" title="Like">♡</button>
+                                <button class="action-btn download-btn" title="Download">⬇</button>
+                                <button class="action-btn share-btn" title="Share">↗</button>
+                                <button class="action-btn fullscreen-btn" title="View Full">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">Ocean Waves</h3>
+                        <p class="image-description">Powerful waves crashing against the shore</p>
+                        <div class="image-meta">
+                            <span class="photographer">📷 Sea Lover</span>
+                            <span class="image-stats">
+                                <span class="likes">♡ 567</span>
+                                <span class="views">👁 2.7k</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="city" data-tags="architecture building modern">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Modern Architecture" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="image-actions">
+                                <button class="action-btn like-btn" title="Like">♡</button>
+                                <button class="action-btn download-btn" title="Download">⬇</button>
+                                <button class="action-btn share-btn" title="Share">↗</button>
+                                <button class="action-btn fullscreen-btn" title="View Full">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">Modern Lines</h3>
+                        <p class="image-description">Clean architectural lines against the sky</p>
+                        <div class="image-meta">
+                            <span class="photographer">📷 Arch Photographer</span>
+                            <span class="image-stats">
+                                <span class="likes">♡ 432</span>
+                                <span class="views">👁 1.9k</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="people" data-tags="group friends happy">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Friends" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="image-actions">
+                                <button class="action-btn like-btn" title="Like">♡</button>
+                                <button class="action-btn download-btn" title="Download">⬇</button>
+                                <button class="action-btn share-btn" title="Share">↗</button>
+                                <button class="action-btn fullscreen-btn" title="View Full">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">Friendship</h3>
+                        <p class="image-description">Capturing moments of joy and connection</p>
+                        <div class="image-meta">
+                            <span class="photographer">📷 Life Moments</span>
+                            <span class="image-stats">
+                                <span class="likes">♡ 654</span>
+                                <span class="views">👁 3.1k</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="abstract" data-tags="texture pattern design">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Abstract Texture" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="image-actions">
+                                <button class="action-btn like-btn" title="Like">♡</button>
+                                <button class="action-btn download-btn" title="Download">⬇</button>
+                                <button class="action-btn share-btn" title="Share">↗</button>
+                                <button class="action-btn fullscreen-btn" title="View Full">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">Texture Play</h3>
+                        <p class="image-description">Exploring patterns and textures in abstract form</p>
+                        <div class="image-meta">
+                            <span class="photographer">📷 Design Studio</span>
+                            <span class="image-stats">
+                                <span class="likes">♡ 298</span>
+                                <span class="views">👁 1.5k</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMoreBtn">Load More Photos</button>
+            </div>
+        </main>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <button class="lightbox-close" id="lightboxClose">&times;</button>
+                <button class="lightbox-prev" id="lightboxPrev">‹</button>
+                <button class="lightbox-next" id="lightboxNext">›</button>
+                <img class="lightbox-image" id="lightboxImage" src="" alt="">
+                <div class="lightbox-info">
+                    <h3 class="lightbox-title" id="lightboxTitle"></h3>
+                    <p class="lightbox-description" id="lightboxDescription"></p>
+                    <div class="lightbox-meta">
+                        <span class="lightbox-photographer" id="lightboxPhotographer"></span>
+                        <div class="lightbox-actions">
+                            <button class="lightbox-action like-btn">♡ Like</button>
+                            <button class="lightbox-action download-btn">⬇ Download</button>
+                            <button class="lightbox-action share-btn">↗ Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
