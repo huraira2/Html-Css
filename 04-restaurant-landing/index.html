@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Bella Vista</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Restaurant Interior">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Bella Vista</h1>
+            <p class="hero-subtitle">Experience culinary excellence in an elegant atmosphere</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Make Reservation</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-description">
+                        For over two decades, Bella Vista has been serving exceptional cuisine crafted from the finest ingredients. Our passionate chefs combine traditional techniques with modern innovation to create unforgettable dining experiences.
+                    </p>
+                    <p class="about-description">
+                        Located in the heart of the city, our restaurant offers an intimate setting perfect for romantic dinners, business meetings, and special celebrations.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Signature Dishes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chef preparing food">
+                    <div class="image-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="appetizers">Appetizers</button>
+                <button class="category-btn" data-category="mains">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+            </div>
+            
+            <div class="menu-items" id="menuItems">
+                <div class="menu-item" data-category="appetizers">
+                    <div class="menu-item-image">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bruschetta">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Truffle Bruschetta</h3>
+                        <p class="menu-item-description">Fresh tomatoes, basil, and truffle oil on toasted artisan bread</p>
+                        <span class="menu-item-price">$18</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="appetizers">
+                    <div class="menu-item-image">
+                        <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Seafood">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Pan-Seared Scallops</h3>
+                        <p class="menu-item-description">Fresh scallops with cauliflower purée and pancetta</p>
+                        <span class="menu-item-price">$24</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Steak">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Wagyu Beef Tenderloin</h3>
+                        <p class="menu-item-description">Premium wagyu with roasted vegetables and red wine reduction</p>
+                        <span class="menu-item-price">$65</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.pexels.com/photos/725991/pexels-photo-725991.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Salmon">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Atlantic Salmon</h3>
+                        <p class="menu-item-description">Grilled salmon with lemon herb butter and seasonal vegetables</p>
+                        <span class="menu-item-price">$42</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chocolate Dessert">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Chocolate Soufflé</h3>
+                        <p class="menu-item-description">Rich dark chocolate soufflé with vanilla ice cream</p>
+                        <span class="menu-item-price">$16</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tiramisu">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Classic Tiramisu</h3>
+                        <p class="menu-item-description">Traditional Italian tiramisu with espresso and mascarpone</p>
+                        <span class="menu-item-price">$14</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Fine Dining">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Chef at Work">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Wine Selection">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Gourmet Dish">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Elegant Setting">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <h3>Location</h3>
+                            <p>123 Gourmet Street<br>Downtown, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-text">
+                            <h3>Hours</h3>
+                            <p>Mon-Thu: 5:00 PM - 10:00 PM<br>
+                               Fri-Sat: 5:00 PM - 11:00 PM<br>
+                               Sun: 4:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="reservation-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Phone Number" required>
+                        <select required>
+                            <option value="">Number of Guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5+">5+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="date" required>
+                        <input type="time" required>
+                    </div>
+                    <textarea placeholder="Special Requests (Optional)" rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Make Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3>
+                    <p>Experience culinary excellence in an elegant atmosphere. Join us for an unforgettable dining experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bella Vista Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

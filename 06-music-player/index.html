@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave - Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="player-container">
+            <!-- Album Art Section -->
+            <div class="album-section">
+                <div class="album-art">
+                    <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Album Cover" id="albumCover">
+                    <div class="vinyl-effect"></div>
+                </div>
+                <div class="visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <!-- Song Info -->
+            <div class="song-info">
+                <h2 class="song-title" id="songTitle">Midnight Dreams</h2>
+                <p class="artist-name" id="artistName">Luna & The Stars</p>
+                <div class="song-details">
+                    <span class="album-name" id="albumName">Cosmic Journey</span>
+                    <span class="year">2024</span>
+                </div>
+            </div>
+
+            <!-- Progress Section -->
+            <div class="progress-section">
+                <div class="time-display">
+                    <span class="current-time" id="currentTime">0:00</span>
+                    <span class="total-time" id="totalTime">3:45</span>
+                </div>
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                    <div class="progress-handle" id="progressHandle"></div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="control-btn shuffle" id="shuffleBtn" title="Shuffle">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/>
+                    </svg>
+                </button>
+                
+                <button class="control-btn prev" id="prevBtn" title="Previous">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                    </svg>
+                </button>
+                
+                <button class="control-btn play-pause" id="playPauseBtn" title="Play/Pause">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </button>
+                
+                <button class="control-btn next" id="nextBtn" title="Next">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                    </svg>
+                </button>
+                
+                <button class="control-btn repeat" id="repeatBtn" title="Repeat">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Volume Control -->
+            <div class="volume-section">
+                <button class="volume-btn" id="volumeBtn" title="Mute/Unmute">
+                    <svg class="volume-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                    <svg class="mute-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                        <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                    </svg>
+                </button>
+                <div class="volume-slider">
+                    <div class="volume-bar" id="volumeBar">
+                        <div class="volume-fill" id="volumeFill"></div>
+                        <div class="volume-handle" id="volumeHandle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist-section">
+            <h3 class="playlist-title">Now Playing</h3>
+            <div class="playlist" id="playlist">
+                <div class="playlist-item active" data-song="0">
+                    <div class="playlist-cover">
+                        <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Song">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-song">Midnight Dreams</div>
+                        <div class="playlist-artist">Luna & The Stars</div>
+                    </div>
+                    <div class="playlist-duration">3:45</div>
+                </div>
+                
+                <div class="playlist-item" data-song="1">
+                    <div class="playlist-cover">
+                        <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Song">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-song">Electric Pulse</div>
+                        <div class="playlist-artist">Neon Nights</div>
+                    </div>
+                    <div class="playlist-duration">4:12</div>
+                </div>
+                
+                <div class="playlist-item" data-song="2">
+                    <div class="playlist-cover">
+                        <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Song">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-song">Ocean Waves</div>
+                        <div class="playlist-artist">Calm Collective</div>
+                    </div>
+                    <div class="playlist-duration">5:23</div>
+                </div>
+                
+                <div class="playlist-item" data-song="3">
+                    <div class="playlist-cover">
+                        <img src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Song">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-song">City Lights</div>
+                        <div class="playlist-artist">Urban Echo</div>
+                    </div>
+                    <div class="playlist-duration">3:58</div>
+                </div>
+                
+                <div class="playlist-item" data-song="4">
+                    <div class="playlist-cover">
+                        <img src="https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Song">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-song">Starlight Serenade</div>
+                        <div class="playlist-artist">Cosmic Dreams</div>
+                    </div>
+                    <div class="playlist-duration">4:35</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

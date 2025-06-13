@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">📊</span>
+                    <span class="logo-text">Analytics</span>
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">📈</span>
+                            <span class="nav-text">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">👥</span>
+                            <span class="nav-text">Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">💰</span>
+                            <span class="nav-text">Revenue</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">📦</span>
+                            <span class="nav-text">Products</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">📋</span>
+                            <span class="nav-text">Reports</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">⚙️</span>
+                            <span class="nav-text">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="User" class="user-avatar">
+                    <div class="user-info">
+                        <span class="user-name">John Doe</span>
+                        <span class="user-role">Admin</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <h1 class="page-title">Dashboard Overview</h1>
+                    <p class="page-subtitle">Welcome back! Here's what's happening with your business today.</p>
+                </div>
+                <div class="header-right">
+                    <div class="date-range">
+                        <select class="date-select">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>Last 3 months</option>
+                            <option>Last year</option>
+                        </select>
+                    </div>
+                    <button class="notification-btn">
+                        <span class="notification-icon">🔔</span>
+                        <span class="notification-badge">3</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon revenue">💰</div>
+                            <div class="stat-trend positive">
+                                <span class="trend-icon">↗</span>
+                                <span class="trend-value">+12.5%</span>
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-value">$45,231</h3>
+                            <p class="stat-label">Total Revenue</p>
+                        </div>
+                        <div class="stat-chart">
+                            <div class="mini-chart" data-values="20,25,30,28,35,40,45"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon users">👥</div>
+                            <div class="stat-trend positive">
+                                <span class="trend-icon">↗</span>
+                                <span class="trend-value">+8.2%</span>
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-value">2,847</h3>
+                            <p class="stat-label">Active Users</p>
+                        </div>
+                        <div class="stat-chart">
+                            <div class="mini-chart" data-values="15,20,18,25,30,28,35"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon orders">📦</div>
+                            <div class="stat-trend negative">
+                                <span class="trend-icon">↘</span>
+                                <span class="trend-value">-3.1%</span>
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-value">1,423</h3>
+                            <p class="stat-label">Orders</p>
+                        </div>
+                        <div class="stat-chart">
+                            <div class="mini-chart" data-values="30,28,25,22,20,18,15"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon conversion">📈</div>
+                            <div class="stat-trend positive">
+                                <span class="trend-icon">↗</span>
+                                <span class="trend-value">+5.7%</span>
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-value">3.24%</h3>
+                            <p class="stat-label">Conversion Rate</p>
+                        </div>
+                        <div class="stat-chart">
+                            <div class="mini-chart" data-values="2.1,2.3,2.8,3.0,3.1,3.2,3.24"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-section">
+                <div class="charts-grid">
+                    <!-- Revenue Chart -->
+                    <div class="chart-card large">
+                        <div class="chart-header">
+                            <h3 class="chart-title">Revenue Overview</h3>
+                            <div class="chart-controls">
+                                <button class="chart-btn active" data-period="week">Week</button>
+                                <button class="chart-btn" data-period="month">Month</button>
+                                <button class="chart-btn" data-period="year">Year</button>
+                            </div>
+                        </div>
+                        <div class="chart-content">
+                            <div class="chart-container">
+                                <canvas id="revenueChart" class="chart-canvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Traffic Sources -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3 class="chart-title">Traffic Sources</h3>
+                        </div>
+                        <div class="chart-content">
+                            <div class="traffic-sources">
+                                <div class="traffic-item">
+                                    <div class="traffic-info">
+                                        <div class="traffic-source">
+                                            <span class="traffic-dot organic"></span>
+                                            <span class="traffic-name">Organic Search</span>
+                                        </div>
+                                        <span class="traffic-percentage">45.2%</span>
+                                    </div>
+                                    <div class="traffic-bar">
+                                        <div class="traffic-fill organic" style="width: 45.2%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="traffic-item">
+                                    <div class="traffic-info">
+                                        <div class="traffic-source">
+                                            <span class="traffic-dot social"></span>
+                                            <span class="traffic-name">Social Media</span>
+                                        </div>
+                                        <span class="traffic-percentage">28.7%</span>
+                                    </div>
+                                    <div class="traffic-bar">
+                                        <div class="traffic-fill social" style="width: 28.7%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="traffic-item">
+                                    <div class="traffic-info">
+                                        <div class="traffic-source">
+                                            <span class="traffic-dot direct"></span>
+                                            <span class="traffic-name">Direct</span>
+                                        </div>
+                                        <span class="traffic-percentage">16.8%</span>
+                                    </div>
+                                    <div class="traffic-bar">
+                                        <div class="traffic-fill direct" style="width: 16.8%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="traffic-item">
+                                    <div class="traffic-info">
+                                        <div class="traffic-source">
+                                            <span class="traffic-dot referral"></span>
+                                            <span class="traffic-name">Referral</span>
+                                        </div>
+                                        <span class="traffic-percentage">9.3%</span>
+                                    </div>
+                                    <div class="traffic-bar">
+                                        <div class="traffic-fill referral" style="width: 9.3%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tables Section -->
+            <section class="tables-section">
+                <div class="tables-grid">
+                    <!-- Recent Orders -->
+                    <div class="table-card">
+                        <div class="table-header">
+                            <h3 class="table-title">Recent Orders</h3>
+                            <a href="#" class="view-all-link">View All</a>
+                        </div>
+                        <div class="table-content">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Customer</th>
+                                        <th>Product</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#12847</td>
+                                        <td>
+                                            <div class="customer-info">
+                                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Customer" class="customer-avatar">
+                                                <span>John Smith</span>
+                                            </div>
+                                        </td>
+                                        <td>Wireless Headphones</td>
+                                        <td>$299.99</td>
+                                        <td><span class="status-badge completed">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12846</td>
+                                        <td>
+                                            <div class="customer-info">
+                                                <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Customer" class="customer-avatar">
+                                                <span>Sarah Johnson</span>
+                                            </div>
+                                        </td>
+                                        <td>Smart Watch</td>
+                                        <td>$399.99</td>
+                                        <td><span class="status-badge processing">Processing</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12845</td>
+                                        <td>
+                                            <div class="customer-info">
+                                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Customer" class="customer-avatar">
+                                                <span>Mike Chen</span>
+                                            </div>
+                                        </td>
+                                        <td>Laptop Stand</td>
+                                        <td>$89.99</td>
+                                        <td><span class="status-badge pending">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12844</td>
+                                        <td>
+                                            <div class="customer-info">
+                                                <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Customer" class="customer-avatar">
+                                                <span>Emma Davis</span>
+                                            </div>
+                                        </td>
+                                        <td>Bluetooth Speaker</td>
+                                        <td>$149.99</td>
+                                        <td><span class="status-badge completed">Completed</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Top Products -->
+                    <div class="table-card">
+                        <div class="table-header">
+                            <h3 class="table-title">Top Products</h3>
+                            <a href="#" class="view-all-link">View All</a>
+                        </div>
+                        <div class="table-content">
+                            <div class="product-list">
+                                <div class="product-item">
+                                    <div class="product-info">
+                                        <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Product" class="product-image">
+                                        <div class="product-details">
+                                            <span class="product-name">Wireless Headphones</span>
+                                            <span class="product-category">Electronics</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-stats">
+                                        <span class="product-sales">1,247 sold</span>
+                                        <span class="product-revenue">$37,410</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-item">
+                                    <div class="product-info">
+                                        <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Product" class="product-image">
+                                        <div class="product-details">
+                                            <span class="product-name">Smart Watch</span>
+                                            <span class="product-category">Wearables</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-stats">
+                                        <span class="product-sales">892 sold</span>
+                                        <span class="product-revenue">$35,680</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-item">
+                                    <div class="product-info">
+                                        <img src="https://images.pexels.com/photos/1649772/pexels-photo-1649772.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Product" class="product-image">
+                                        <div class="product-details">
+                                            <span class="product-name">Bluetooth Speaker</span>
+                                            <span class="product-category">Audio</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-stats">
+                                        <span class="product-sales">634 sold</span>
+                                        <span class="product-revenue">$19,020</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-item">
+                                    <div class="product-info">
+                                        <img src="https://images.pexels.com/photos/1649774/pexels-photo-1649774.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Product" class="product-image">
+                                        <div class="product-details">
+                                            <span class="product-name">Laptop Stand</span>
+                                            <span class="product-category">Accessories</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-stats">
+                                        <span class="product-sales">423 sold</span>
+                                        <span class="product-revenue">$12,690</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity Feed -->
+            <section class="activity-section">
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3 class="activity-title">Recent Activity</h3>
+                        <button class="refresh-btn" id="refreshActivity">🔄</button>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-feed">
+                            <div class="activity-item">
+                                <div class="activity-icon new-order">📦</div>
+                                <div class="activity-details">
+                                    <p class="activity-text">New order #12847 received from <strong>John Smith</strong></p>
+                                    <span class="activity-time">2 minutes ago</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon user-signup">👤</div>
+                                <div class="activity-details">
+                                    <p class="activity-text">New user <strong>Sarah Johnson</strong> signed up</p>
+                                    <span class="activity-time">15 minutes ago</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon payment">💳</div>
+                                <div class="activity-details">
+                                    <p class="activity-text">Payment of <strong>$299.99</strong> received</p>
+                                    <span class="activity-time">1 hour ago</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon review">⭐</div>
+                                <div class="activity-details">
+                                    <p class="activity-text">New 5-star review for <strong>Wireless Headphones</strong></p>
+                                    <span class="activity-time">2 hours ago</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon inventory">📊</div>
+                                <div class="activity-details">
+                                    <p class="activity-text">Low stock alert for <strong>Smart Watch</strong></p>
+                                    <span class="activity-time">3 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

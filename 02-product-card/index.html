@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card - Premium Headphones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-card">
+            <div class="product-badge">New</div>
+            
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Premium Headphones" id="mainImg">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=100" alt="View 1" class="thumbnail active">
+                    <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=100" alt="View 2" class="thumbnail">
+                    <img src="https://images.pexels.com/photos/1649772/pexels-photo-1649772.jpeg?auto=compress&cs=tinysrgb&w=100" alt="View 3" class="thumbnail">
+                    <img src="https://images.pexels.com/photos/1649774/pexels-photo-1649774.jpeg?auto=compress&cs=tinysrgb&w=100" alt="View 4" class="thumbnail">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-category">Audio Equipment</div>
+                <h1 class="product-title">Premium Wireless Headphones</h1>
+                <div class="product-rating">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="rating-text">(4.2) 128 reviews</span>
+                </div>
+
+                <div class="product-price">
+                    <span class="current-price">$299.99</span>
+                    <span class="original-price">$399.99</span>
+                    <span class="discount">25% OFF</span>
+                </div>
+
+                <div class="product-description">
+                    <p>Experience premium sound quality with our latest wireless headphones. Featuring active noise cancellation, 30-hour battery life, and premium comfort design.</p>
+                </div>
+
+                <div class="product-options">
+                    <div class="color-options">
+                        <label>Color:</label>
+                        <div class="color-choices">
+                            <div class="color-option active" data-color="black" style="background: #2d3748;"></div>
+                            <div class="color-option" data-color="white" style="background: #f7fafc;"></div>
+                            <div class="color-option" data-color="blue" style="background: #3182ce;"></div>
+                            <div class="color-option" data-color="red" style="background: #e53e3e;"></div>
+                        </div>
+                    </div>
+
+                    <div class="size-options">
+                        <label>Size:</label>
+                        <div class="size-choices">
+                            <button class="size-option">Small</button>
+                            <button class="size-option active">Medium</button>
+                            <button class="size-option">Large</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quantity-selector">
+                    <label>Quantity:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" id="decrease">-</button>
+                        <span class="quantity-value" id="quantity">1</span>
+                        <button class="quantity-btn" id="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <button class="btn btn-primary add-to-cart">
+                        <span class="btn-text">Add to Cart</span>
+                        <span class="btn-icon">🛒</span>
+                    </button>
+                    <button class="btn btn-secondary wishlist">
+                        <span class="btn-icon">♡</span>
+                    </button>
+                    <button class="btn btn-secondary share">
+                        <span class="btn-icon">↗</span>
+                    </button>
+                </div>
+
+                <div class="product-features">
+                    <div class="feature">
+                        <span class="feature-icon">🚚</span>
+                        <div class="feature-text">
+                            <strong>Free Shipping</strong>
+                            <small>On orders over $50</small>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🔄</span>
+                        <div class="feature-text">
+                            <strong>30-Day Returns</strong>
+                            <small>Easy return policy</small>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🛡️</span>
+                        <div class="feature-text">
+                            <strong>2-Year Warranty</strong>
+                            <small>Full coverage</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

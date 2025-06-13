@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechInsights - Modern Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>TechInsights</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn">🔍</button>
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Discover the Latest in Technology</h2>
+                <p class="hero-subtitle">Stay updated with cutting-edge insights, tutorials, and industry trends</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="Search articles..." class="search-input">
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-section">
+            <div class="container">
+                <h2 class="section-title">Featured Article</h2>
+                <article class="featured-article">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI and Machine Learning">
+                        <div class="article-category">AI & ML</div>
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">The Future of Artificial Intelligence: Trends to Watch in 2025</h3>
+                        <p class="article-excerpt">Explore the groundbreaking developments in AI technology that are reshaping industries and transforming how we work, live, and interact with technology.</p>
+                        <div class="article-meta">
+                            <div class="author-info">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Author" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">Sarah Johnson</span>
+                                    <span class="publish-date">March 15, 2025</span>
+                                </div>
+                            </div>
+                            <div class="article-stats">
+                                <span class="read-time">8 min read</span>
+                                <span class="view-count">2.3k views</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more-btn">Read Full Article</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="articles-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Articles</h2>
+                    <div class="category-filters">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="web-dev">Web Dev</button>
+                        <button class="filter-btn" data-category="ai-ml">AI & ML</button>
+                        <button class="filter-btn" data-category="mobile">Mobile</button>
+                        <button class="filter-btn" data-category="design">Design</button>
+                    </div>
+                </div>
+
+                <div class="articles-grid" id="articlesGrid">
+                    <article class="article-card" data-category="web-dev">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Web Development">
+                            <div class="card-category">Web Dev</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Modern CSS Grid Techniques for Responsive Design</h3>
+                            <p class="card-excerpt">Learn advanced CSS Grid techniques to create flexible, responsive layouts that work across all devices.</p>
+                            <div class="card-meta">
+                                <div class="author-info">
+                                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Author" class="author-avatar">
+                                    <span class="author-name">Mike Chen</span>
+                                </div>
+                                <span class="publish-date">Mar 12</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="read-time">5 min read</span>
+                                <div class="card-actions">
+                                    <button class="action-btn like-btn">♡ 24</button>
+                                    <button class="action-btn share-btn">↗</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card" data-category="ai-ml">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Machine Learning">
+                            <div class="card-category">AI & ML</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Getting Started with Neural Networks: A Beginner's Guide</h3>
+                            <p class="card-excerpt">Dive into the fundamentals of neural networks and understand how they power modern AI applications.</p>
+                            <div class="card-meta">
+                                <div class="author-info">
+                                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Author" class="author-avatar">
+                                    <span class="author-name">Sarah Johnson</span>
+                                </div>
+                                <span class="publish-date">Mar 10</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="read-time">12 min read</span>
+                                <div class="card-actions">
+                                    <button class="action-btn like-btn">♡ 45</button>
+                                    <button class="action-btn share-btn">↗</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card" data-category="mobile">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mobile Development">
+                            <div class="card-category">Mobile</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">React Native vs Flutter: Choosing the Right Framework</h3>
+                            <p class="card-excerpt">Compare the pros and cons of React Native and Flutter to make an informed decision for your next mobile project.</p>
+                            <div class="card-meta">
+                                <div class="author-info">
+                                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Author" class="author-avatar">
+                                    <span class="author-name">Alex Rivera</span>
+                                </div>
+                                <span class="publish-date">Mar 8</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="read-time">7 min read</span>
+                                <div class="card-actions">
+                                    <button class="action-btn like-btn">♡ 32</button>
+                                    <button class="action-btn share-btn">↗</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card" data-category="design">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" alt="UI Design">
+                            <div class="card-category">Design</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Design Systems: Building Consistent User Experiences</h3>
+                            <p class="card-excerpt">Learn how to create and maintain design systems that ensure consistency across your digital products.</p>
+                            <div class="card-meta">
+                                <div class="author-info">
+                                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Author" class="author-avatar">
+                                    <span class="author-name">Emma Davis</span>
+                                </div>
+                                <span class="publish-date">Mar 6</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="read-time">6 min read</span>
+                                <div class="card-actions">
+                                    <button class="action-btn like-btn">♡ 18</button>
+                                    <button class="action-btn share-btn">↗</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card" data-category="web-dev">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400" alt="JavaScript">
+                            <div class="card-category">Web Dev</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">JavaScript ES2024: New Features and Improvements</h3>
+                            <p class="card-excerpt">Explore the latest JavaScript features and how they can improve your development workflow and code quality.</p>
+                            <div class="card-meta">
+                                <div class="author-info">
+                                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Author" class="author-avatar">
+                                    <span class="author-name">Mike Chen</span>
+                                </div>
+                                <span class="publish-date">Mar 4</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="read-time">9 min read</span>
+                                <div class="card-actions">
+                                    <button class="action-btn like-btn">♡ 56</button>
+                                    <button class="action-btn share-btn">↗</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card" data-category="ai-ml">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Data Science">
+                            <div class="card-category">AI & ML</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Data Visualization Best Practices for Machine Learning</h3>
+                            <p class="card-excerpt">Master the art of visualizing complex data to better understand and communicate your ML insights.</p>
+                            <div class="card-meta">
+                                <div class="author-info">
+                                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=50" alt="Author" class="author-avatar">
+                                    <span class="author-name">Sarah Johnson</span>
+                                </div>
+                                <span class="publish-date">Mar 2</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="read-time">11 min read</span>
+                                <div class="card-actions">
+                                    <button class="action-btn like-btn">♡ 38</button>
+                                    <button class="action-btn share-btn">↗</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="load-more-section">
+                    <button class="load-more-btn" id="loadMoreBtn">Load More Articles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Stay Updated</h2>
+                    <p class="newsletter-subtitle">Get the latest tech insights delivered to your inbox weekly</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                    <p class="newsletter-note">No spam, unsubscribe at any time</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Popular Articles</h3>
+                <div class="popular-articles">
+                    <article class="popular-article">
+                        <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Popular Article">
+                        <div class="popular-content">
+                            <h4>The Future of AI in Web Development</h4>
+                            <span class="popular-views">5.2k views</span>
+                        </div>
+                    </article>
+                    <article class="popular-article">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Popular Article">
+                        <div class="popular-content">
+                            <h4>Building Scalable React Applications</h4>
+                            <span class="popular-views">4.8k views</span>
+                        </div>
+                    </article>
+                    <article class="popular-article">
+                        <img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Popular Article">
+                        <div class="popular-content">
+                            <h4>Mobile-First Design Principles</h4>
+                            <span class="popular-views">3.9k views</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Categories</h3>
+                <div class="categories-list">
+                    <a href="#" class="category-link">Web Development <span>(24)</span></a>
+                    <a href="#" class="category-link">AI & Machine Learning <span>(18)</span></a>
+                    <a href="#" class="category-link">Mobile Development <span>(15)</span></a>
+                    <a href="#" class="category-link">UI/UX Design <span>(12)</span></a>
+                    <a href="#" class="category-link">DevOps <span>(9)</span></a>
+                    <a href="#" class="category-link">Data Science <span>(7)</span></a>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Tags</h3>
+                <div class="tags-cloud">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">AI</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Design</span>
+                    <span class="tag">Mobile</span>
+                    <span class="tag">API</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechInsights</h3>
+                    <p>Your go-to source for the latest in technology, development, and design insights.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">AI & ML</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechInsights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

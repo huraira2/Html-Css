@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexTech - Coming Soon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="coming-soon-container">
+        <!-- Background Animation -->
+        <div class="background-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Logo -->
+            <div class="logo-section">
+                <div class="logo">
+                    <span class="logo-icon">🚀</span>
+                    <span class="logo-text">NexTech</span>
+                </div>
+            </div>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <h1 class="hero-title">
+                    Something <span class="highlight">Amazing</span> is Coming
+                </h1>
+                <p class="hero-subtitle">
+                    We're working hard to bring you the next generation of technology solutions. 
+                    Get ready for an experience that will transform the way you work and live.
+                </p>
+            </section>
+
+            <!-- Countdown Timer -->
+            <section class="countdown-section">
+                <h2 class="countdown-title">Launch Countdown</h2>
+                <div class="countdown-timer" id="countdownTimer">
+                    <div class="time-unit">
+                        <div class="time-value" id="days">00</div>
+                        <div class="time-label">Days</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-value" id="hours">00</div>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-value" id="minutes">00</div>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-value" id="seconds">00</div>
+                        <div class="time-label">Seconds</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Preview -->
+            <section class="features-section">
+                <h2 class="features-title">What to Expect</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Lightning Fast</h3>
+                        <p class="feature-description">Experience unprecedented speed and performance with our cutting-edge technology.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3 class="feature-title">Secure & Private</h3>
+                        <p class="feature-description">Your data is protected with enterprise-grade security and privacy measures.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3 class="feature-title">Beautiful Design</h3>
+                        <p class="feature-description">Enjoy a stunning, intuitive interface designed for the modern user.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Email Signup -->
+            <section class="signup-section">
+                <div class="signup-content">
+                    <h2 class="signup-title">Be the First to Know</h2>
+                    <p class="signup-subtitle">Join our exclusive list and get early access when we launch</p>
+                    
+                    <form class="signup-form" id="signupForm">
+                        <div class="form-group">
+                            <input type="email" class="email-input" placeholder="Enter your email address" required id="emailInput">
+                            <button type="submit" class="signup-btn">
+                                <span class="btn-text">Notify Me</span>
+                                <span class="btn-loader"></span>
+                            </button>
+                        </div>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+
+                    <div class="signup-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✨</span>
+                            <span class="benefit-text">Early access to beta</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎁</span>
+                            <span class="benefit-text">Exclusive launch offers</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📧</span>
+                            <span class="benefit-text">Product updates & news</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Bar -->
+            <section class="progress-section">
+                <div class="progress-content">
+                    <h3 class="progress-title">Development Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                        <div class="progress-text" id="progressText">85% Complete</div>
+                    </div>
+                    <div class="progress-milestones">
+                        <div class="milestone completed">
+                            <div class="milestone-dot"></div>
+                            <span class="milestone-label">Planning</span>
+                        </div>
+                        <div class="milestone completed">
+                            <div class="milestone-dot"></div>
+                            <span class="milestone-label">Design</span>
+                        </div>
+                        <div class="milestone completed">
+                            <div class="milestone-dot"></div>
+                            <span class="milestone-label">Development</span>
+                        </div>
+                        <div class="milestone active">
+                            <div class="milestone-dot"></div>
+                            <span class="milestone-label">Testing</span>
+                        </div>
+                        <div class="milestone">
+                            <div class="milestone-dot"></div>
+                            <span class="milestone-label">Launch</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Links -->
+            <section class="social-section">
+                <h3 class="social-title">Follow Our Journey</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link twitter">
+                        <span class="social-icon">🐦</span>
+                        <span class="social-name">Twitter</span>
+                    </a>
+                    <a href="#" class="social-link linkedin">
+                        <span class="social-icon">💼</span>
+                        <span class="social-name">LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link github">
+                        <span class="social-icon">🐙</span>
+                        <span class="social-name">GitHub</span>
+                    </a>
+                    <a href="#" class="social-link discord">
+                        <span class="social-icon">💬</span>
+                        <span class="social-name">Discord</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 NexTech. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Success Modal -->
+        <div class="modal" id="successModal">
+            <div class="modal-content">
+                <div class="modal-icon">🎉</div>
+                <h3 class="modal-title">Thank You!</h3>
+                <p class="modal-text">You've been successfully added to our launch list. We'll notify you as soon as we go live!</p>
+                <button class="modal-btn" onclick="closeModal()">Awesome!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
